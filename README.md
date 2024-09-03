@@ -15,7 +15,7 @@ This project uses three variables from the Eurobarometer 63.1 survey:
 The bootstrap confidence intervals table also reports that the 95% confidence intervals for both slope estimates do not include 0. This leads us to reject both null hypotheses at the 5% significance level, and conclude that there appear to be relationships for both age and science knowledge with attitude to science and faith.
 
 ##### **Intercept**
-The results in the table report an estimate of the intercept as equal to approximately 2.79. The constant of a multiple regression model can be interpreted as the average expected value of the dependent variable when all of the independent variables equal zero. In this case, the independent variable science knowledge has only a handful of respondents that score zero, and no one is aged zero, so the constant by itself does not tell us much.
+The results in the table report an estimate of the intercept as equal to approximately 2.79.  The independent variable science knowledge has only a handful of respondents that score zero, and no one is aged zero, so the constant by itself does not tell us much.
 
 ##### **Science knowledge slope**
 The estimated value for the slope coefficient linking knowledge to attitude is estimated to be approximately -0.08. This represents the average marginal effect of knowledge on attitude. Every increase in quiz score by one point is associated with a decrease in attitude score of about -0.08, adjusted for age.
