@@ -1,5 +1,5 @@
 # R-Attitudes-about-Science-and-Faith-Project
- This project explores whether knowledge about science and age are associated with attitudes towards science and faith. To examine these relationships, we will use a subset of data from the 2005 Eurobarometer 63.1 survey.  In this project we try to model this relationship with a linear regression and create confidence intervals using bootstrapping.
+ This project explores whether knowledge about science and age are associated with attitudes toward science and faith. To examine these relationships, we will use a subset of data from the 2005 Eurobarometer 63.1 survey.  In this project, we try to model this relationship with a linear regression and create confidence intervals using bootstrapping.
 
 ### Data
 This project uses three variables from the Eurobarometer 63.1 survey:
@@ -7,7 +7,7 @@ This project uses three variables from the Eurobarometer 63.1 survey:
 + `Science Score`: Score on a science quiz composed of 13 true/false items.
 + `age`: Age measured in years.
 ##### Target
-+ `Attitude`: Attitude to science and faith (question wording: “We rely too much on science and not enough on faith”; responses on a 5-point scale from strongly disagree to strongly agree).
++ `Attitude`: Attitude to science and faith (question-wording: “We rely too much on science and not enough on faith”; responses on a 5-point scale from strongly disagree to strongly agree).
 
 ### Results
 
