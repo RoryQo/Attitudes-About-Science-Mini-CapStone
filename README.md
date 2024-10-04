@@ -14,6 +14,20 @@ This project uses three variables from the Eurobarometer 63.1 survey:
 ##### **Bootstrap Results**
 The bootstrap confidence intervals table also reports that the 95% confidence intervals for both slope estimates do not include 0. This leads us to reject both null hypotheses at the 5% significance level, and conclude that there appear to be relationships for both age and science knowledge with attitude to science and faith.
 
+```
+# Bootstrap
+boot_reg <- Boot(reg, R = 1000)
+# CI for bootstrap coeff
+Confint(boot_reg, level = 0.95, type = "perc")
+Confint(boot_reg, type = "perc") %>%
+    kable(digits = 3, caption = 'Bootstrap 95% CIs') %>%
+    kable_styling(full_width = FALSE)
+
+# Plot distribution of slope values for each variable from bootstrap
+plot_data <- as_tibble(boot_reg$t)
+hist(boot_reg, ci = "perc", legend = "separate")
+```
+
 ##### **Intercept**
 The results in the table report an estimate of the intercept as equal to approximately 2.79.  The independent variable science knowledge has only a handful of respondents that score zero, and no one is aged zero, so the constant by itself does not tell us much.
 
